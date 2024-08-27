@@ -1,48 +1,32 @@
-# Welcome to Amini Data Platform
+# Mintlify Starter Kit
 
-Welcome to the Amini Platform, where you can source, process, and get trustworthy datasets and insights that pertain to Africa, in one place. The purpose of the Amini Platform is to:
+Click on `Use this template` to copy the Mintlify starter kit. The starter kit contains examples including
 
-- Close the gap in the **data scarcity** in Africa and the Global South, and
-- Reduce **information inaccessibility** by making insights easy-to-understand
+- Guide pages
+- Navigation
+- Customizations
+- API Reference pages
+- Use of popular components
 
-👉 [Get started](https://platform.amini.ai)
+### Development
 
-## About Amini Data Platform
-### Data Catalog
-Petabyte-scale catalog of diverse datasets ranging from satellite imagery, to soil sample analyses, to weather data, to drone imagery, to farm geopolygons, including both publicly accessible and first-party datasets, all in one place.
+Install the [Mintlify CLI](https://www.npmjs.com/package/mintlify) to preview the documentation changes locally. To install, use the following command
 
-### Compute Engine
-Leverage Amini’s Compute Engine to scale your operations and analyses with ease and without complications on hardware requirements, job orchestration, monitoring and logging, and much more. The big idea is that you shouldn’t need to know systems and cloud engineering to run workloads and compute necessary datapoints for your analysis.
+```
+npm i -g mintlify
+```
 
-### Processing Engine
-#### GeoPackage
-The Amini GeoPackage allows you to:
+Run the following command at the root of your documentation (where mint.json is)
 
-1. Process geospatial datasets.
-2. Perform basic geospatial analysis to create new datasets.
-3. Store and serve processed and derived data for visualization and reporting.
+```
+mintlify dev
+```
 
-### Data-as-a-Service
-- Access the largest catalog of validated and contextualized datasets for **Africa**
-- Seamlessly integrate with your applications via REST APIs
-- Power your organization with data-driven decision making with easy-to-download datasets available as CSVs
-- Leverage Amini Compute Engine to process and transform geospatial data into meaningful business metrics
+### Publishing Changes
 
-### Webapp
-Easy-to-use web application that lets you visualize datapoints on a map to help you better grasp the kinds of analysis you can do with Amini Data.
+Install our Github App to autopropagate changes from youre repo to your deployment. Changes will be deployed to production automatically after pushing to the default branch. Find the link to install on your dashboard. 
 
-## How to Use
-### API
-Connect to the Amini datapoints via authenticated HTTP requests using REST APIs.
+#### Troubleshooting
 
-### CSVs
-
-Browse the Amini Data Catalog, and select which parameters, for which dates, and for which areas you want to download datasets from.
-
-### Webapp
-
-See the power of the Amini Data Platform by viewing datapoints as easy-to-use visualizations on a map with an intuitive, search-driven user interface.
-
-## Get Started
-
-Get started building analyses and applications using the Amini Data Platform. See our guides and recipebook for inspiration.
+- Mintlify dev isn't running - Run `mintlify install` it'll re-install dependencies.
+- Page loads as a 404 - Make sure you are running in a folder with `mint.json`
