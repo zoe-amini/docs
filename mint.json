@@ -55,7 +55,7 @@
       "pages": [
         "introduction",
         "quickstart",
-        "data-catalog"
+        "data-catalog",
         "quickstart-webapp"
       ]
     },
@@ -80,7 +80,7 @@
         "essentials/navigation",
         "essentials/reusable-snippets"
       ]
-    }
+    },
     {
       "group": "Tutorials and Sample Applications",
       "pages": [
@@ -91,7 +91,7 @@
         "essentials/navigation",
         "essentials/reusable-snippets"
       ]
-    },
+    }
   ],
   "footerSocials": {
     "twitter": "https://twitter.com/mintlify",
