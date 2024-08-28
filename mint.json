@@ -53,7 +53,9 @@
     {
       "group": "Introduction",
       "pages": [
-        "welcome"
+        "welcome",
+        "/getting-started-guides/quickstart-webapp",
+        "/components/data-catalog"
       ]
     },
     {
