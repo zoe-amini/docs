@@ -1,0 +1,41 @@
+---
+title: 'Data Catalog'
+description: 'Description of your new file.'
+---
+
+# Release notes
+
+| **Release** | **Release date** | Release notes |
+| --- | --- | --- |
+| v0.5 | September 9, 2024 | No changes! Our first public release |
+
+# Supported datapoints
+
+| Datapoint | Name | Description | Common uses | Interpretation of data | Data format |
+| -- | -- | -- | -- | -- | -- |
+| ndvi | Normalized Difference Vegetation Index (NDVI) | Measures the greenness of vegetation. Higher values indicate healthier, denser vegetation. | Crop monitoring, forest management, vegetation health assessment. | Values closer to 1 indicate healthy, dense vegetation (e.g., green forests). Values closer to -1 indicate bare soil or water bodies. Values near 0 suggest sparse or unhealthy vegetation. | `float` with range from `-1.00` to `1.00` |
+| evi | Enhanced Vegetation Index (EVI) | An improved version of NVDI that is less sensitive to atmospheric effects and soil background. | Crop stress detection, vegetation monitoring in arid regions. | Similar to NDVI, but less sensitive to atmospheric effects and soil background. Higher values generally indicate healthier vegetation. | `float` with range from `-1.00` to `1.00` |
+| ndwi | Normalized Difference Water Index (NDWI) | Measures the presence of water bodies. Higher values indicate more water. | Water resource management, flood mapping, wetland monitoring. | Values closer to 1 indicate water bodies (e.g., lakes, rivers). Values closer to -1 indicate land areas. Values near 0 suggest mixed land-water areas. | `float` with range from `-1.00` to `1.00` |
+| ndmi | Normalized Difference Moisture Index (NDMI) | Measures the presence of moisture in vegetation. Higher values indicate more moisture. | CAgricultural drought monitoring, vegetation stress assessment. | Values closer to 1 indicate areas with high moisture content (e.g., wetlands, dense vegetation). Values closer to -1 indicate dry areas. Values near 0 suggest moderate moisture content. | `float` with range from `-1.00` to `1.00` |
+| savi | Soil-Adjusted Vegetation Index (SAVI) | Adjusts for soil background effects, making it more suitable for areas with bare soil. | Crop monitoring in areas with bare soil, vegetation health assessment in arid regions. | Similar to NDVI but adjusted for soil background effects. Higher values indicate healthier vegetation, even in areas with bare soil. | `float` with range from `-1.00` to `1.00` |
+| msavi | Modified Soil-Adjusted Vegetation Index (MSAVI) | An improved version of SAVI that provides a wider dynamic range. | Similar to SAVI, but more sensitive to changes in vegetation conditions. | Similar to SAVI, but with a wider dynamic range. Higher values indicate healthier vegetation. | `float` with range from `-1.00` to `1.00` |
+| gndvi | Green Normalized Difference Vegetation Index (GNDVI) | Focuses on the green band of the spectrum, providing a more specific measure of green vegetation. | Monitoring green vegetation cover, assessing plant health in agricultural and forestry applications. | Specifically measures green vegetation. Higher values indicate more green vegetation, while lower values suggest other vegetation types or bare soil. | `float` with range from `-1.00` to `1.00` |
+| ccci | Canopy Chlorophyll Content Index (CCCI) | A vegetation index specifically designed to estimate the chlorophyll content of plant canopies. It incorporates algorithms to reduce the influence of soil reflectance, providing a more accurate estimate of chlorophyll content. | Assessing plant health, vegetation stress, and ecosystem dynamics. | Higher values generally indicate higher chlorophyll content in plant canopies. Lower values suggest lower chlorophyll content or other factors affecting vegetation health. | `float` with range from `-1.00` to `1.00` |
+| nbr | Normalized Different NIR/SWIR Normalized Burn Ratio (NBR) | Detects areas affected by fires. Higher values indicate burned areas. | Fire mapping, post-fire recovery monitoring, assessing fire severity. | Values closer to 1 indicate burned areas. Values closer to -1 indicate unburned areas. Values near 0 suggest mixed areas with both burned and unburned regions. | `float` with range from `-1.00` to `1.00` |
+
+
+# Supported areas of interest
+
+| Region | Countries Available |
+| -- | -- |
+| Africa | Algeria, Angola, Benin, Botswana, Burkina Faso, Burundi, Cabo Verde, Cameroon, Central African Republic, Chad, Comoros, Democratic Republic of the Congo, Republic of the Congo, Côte d'Ivoire, Djibouti, Egypt, Equatorial Guinea, Eritrea, Eswatini, Ethiopia, Gabon, Gambia, Ghana, Guinea, Guinea-Bissau, Kenya, Lesotho, Liberia, Libya, Madagascar, Malawi, Mali, Mauritania, Mauritius, Morocco, Mozambique, Namibia, Niger, Nigeria, Rwanda, São Tomé and Príncipe, Senegal, Seychelles, Sierra Leone, Somalia, South Africa, South Sudan, Sudan, Tanzania, Togo, Tunisia, Uganda, Zambia, Zimbabwe |
+| Southeast Asia  | Brunei, Cambodia, East Timor, Indonesia, Laos, Malaysia, Myanmar, Philippines, Thailand, Vietnam |
+| Latin America & Caribbean | Antigua and Barbuda, Argentina, Bahamas, Barbados, Belize, Bolivia, Brazil, Chile, Colombia, Costa Rica, Cuba, Dominica, Dominican Republic, Ecuador, El Salvador, Grenada, Guatemala, Guyana, Haiti, Honduras, Jamaica, Mexico, Nicaragua, Panama, Paraguay, Peru, Saint Kitts and Nevis, Saint Lucia, Saint Vincent and the Grenadines, Suriname, Trinidad and Tobago, Uruguay, Venezuela |
+
+
+# Supported time period
+
+| Time Period | What's supported |
+| -- | -- |
+| Data available from | January 1, 2020 |
+| Most recent date supported | Up to **7 days** prior to query |
