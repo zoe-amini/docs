@@ -54,32 +54,32 @@
       "group": "Introduction",
       "pages": [
         "welcome",
-        "/getting-started-guides/quickstart-webapp",
-        "/components/data-catalog"
+        "getting-started-guides/quickstart-webapp",
+        "components/data-catalog"
       ]
     },
     {
       "group": "Getting Started",
       "pages": [
-        "/getting-started-guides/quickstart-api",
-        "/getting-started-guides/quickstart-download-center",
-        "/getting-started-guides/quickstart-webapp"
+        "getting-started-guides/quickstart-api",
+        "getting-started-guides/quickstart-download-center",
+        "getting-started-guides/quickstart-webapp"
       ]
     },
     {
       "group": "Components",
       "pages": [
-        "/components/data-catalog",
-        "/components/compute-engine",
-        "/components/geopackage"
+        "components/data-catalog",
+        "components/compute-engine",
+        "components/geopackage"
       ]
     },
     {
       "group": "Tutorials and Sample Applications",
       "pages": [
-        "/tutorials/forest-suitability",
-        "/tutorials/landscape-suitability",
-        "/tutorials/crop-monitoring"
+        "tutorials/forest-suitability",
+        "tutorials/landscape-suitability",
+        "tutorials/crop-monitoring"
       ]
     }
   ],
